@@ -1,9 +1,25 @@
 Package: gateveys2
-Title: 
-Description: 
+Title: Aggregate Survey Data
+Description: This is the second version of the aggregate surveys
+    package (gateveys). This new version relies on data.table and is much
+    faster than the former version. It is originally meant to handle
+    business tendency survey data, but is likely suitable for any kind
+    of qualitative survey data. The package provides a toolbox
+    to aggregate participant level data (micro data) to e.g.
+    sector level time series. It also transforms the results into
+    zoo time series objects.
 Version: 0.1
-Authors@R: # getOptions('devtools.desc.author')
-Depends: R (>= 3.0.2)
-License: # getOptions('devtools.desc.license')
+Authors@R: 'Matthias Bannert <bannert@kof.ethz.ch> [aut, cre]'
+Depends:
+    R (>= 3.0.2),
+    data.table,
+    zoo
+License: GPL-2
 LazyData: true
 Maintainer: 'Matthias Bannert' <bannert@kof.ethz.ch>
+Collate:
+    'calc_shares.R'
+    'dt2grid.R'
+    'dt2ts_table.R'
+    'gateveys2-package.r'
+    'ts_table2_zoo.R'
