@@ -9,6 +9,7 @@
 #' @param neg_name name of the negative item
 #' @param balance_label name of the label for the balance item
 #' @author Matthias Bannert
+#' @export
 calc_balance_from_ts_env <- function(env,pos_name,neg_name,
                                      balance_label){
   # get positive and negative items as well as chunks for labelling
