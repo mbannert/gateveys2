@@ -19,7 +19,8 @@
 #' @seealso \code{\link{data.table}}
 #' @export
 #' 
-ts_table2zoo <- function(dtable,env,cname="ch",pname="kof",sname="iq02",
+ts_table2zoo <- function(dtable,env,
+                         cname = "ch",pname = "kof",sname = "iq02",
                    freq = 4,item_chunk = "item",ans_chunk = "an"){
   # SANITY CHECKS ####
   if(!(length(key(dtable)) > 2)){
@@ -63,6 +64,7 @@ ts_table2zoo <- function(dtable,env,cname="ch",pname="kof",sname="iq02",
       # assign the time series objects to the store environment
       # could improve on this: more abstract form of pasting
       # composite key elements
+          
       if(length(key(dtable)) == 4){
         key_chunk <- generate_key_chunk(cname,pname,sname,
                                         level = paste(names(grd)[1],names(grd)[2],sep = "_"),
@@ -86,7 +88,7 @@ ts_table2zoo <- function(dtable,env,cname="ch",pname="kof",sname="iq02",
       # TODO: Decide whether to really store total answers.
       assign(paste(key_chunk,ans_chunk,sep="."),
              answers,envir=env)
-      
+          
       res[[i]] <- paste("Key group",key_chunk,"stored to environment",
                         deparse(substitute(env)),".")
     }

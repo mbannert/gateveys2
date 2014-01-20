@@ -22,4 +22,5 @@ Collate:
     'dt2grid.R'
     'dt2ts_table.R'
     'gateveys2-package.r'
-    'ts_table2_zoo.R'
+    'calc_balance_from_ts_env.R'
+    'ts_table2zoo.R'
