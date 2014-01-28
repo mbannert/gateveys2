@@ -24,3 +24,4 @@ Collate:
     'gateveys2-package.r'
     'calc_balance_from_ts_env.R'
     'ts_table2zoo.R'
+    'set_attributes_by_extract.R'
