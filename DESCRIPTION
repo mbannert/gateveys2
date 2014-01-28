@@ -13,7 +13,8 @@ Authors@R: 'Matthias Bannert <bannert@kof.ethz.ch> [aut, cre]'
 Depends:
     R (>= 3.0.2),
     data.table,
-    zoo
+    zoo,
+    stringr
 License: GPL-2
 LazyData: true
 Maintainer: 'Matthias Bannert' <bannert@kof.ethz.ch>
