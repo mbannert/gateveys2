@@ -1,3 +1,4 @@
+export(add_up_list_elements)
 export(add_up_variables)
 export(calc_balance_from_ts_env)
 export(calc_shares)
