@@ -26,3 +26,6 @@ Collate:
     'calc_balance_from_ts_env.R'
     'ts_table2zoo.R'
     'set_attributes_by_extract.R'
+    'add_up_variables.R'
+    'get_by_attributes.R'
+    'mutiply_group.R'
