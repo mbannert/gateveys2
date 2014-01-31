@@ -30,3 +30,4 @@ Collate:
     'get_by_attributes.R'
     'mutiply_group.R'
     'add_up_list_elements.R'
+    'fill_up_missing_rows.R'
