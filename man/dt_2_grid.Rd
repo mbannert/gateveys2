@@ -1,8 +1,8 @@
-\name{dt2grid}
-\alias{dt2grid}
+\name{dt_2_grid}
+\alias{dt_2_grid}
 \title{Extract cartesian grid from data.table keys}
 \usage{
-  dt2grid(dt, exclude = "")
+  dt_2_grid(dt, exclude = "")
 }
 \arguments{
   \item{dt}{a data.table}

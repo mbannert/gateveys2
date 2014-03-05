@@ -20,8 +20,6 @@ LazyData: true
 Maintainer: 'Matthias Bannert' <bannert@kof.ethz.ch>
 Collate:
     'calc_shares.R'
-    'dt2grid.R'
-    'dt2ts_table.R'
     'gateveys2-package.r'
     'calc_balance_from_ts_env.R'
     'set_attributes_by_extract.R'
@@ -31,3 +29,5 @@ Collate:
     'add_up_list_elements.R'
     'fill_up_missing_rows.R'
     'ts_table_2_zoo.R'
+    'dt_2_grid.R'
+    'dt_2_ts_table.R'

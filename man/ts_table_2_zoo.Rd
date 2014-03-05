@@ -27,14 +27,14 @@
 
   \item{ans_chunk}{character chunk denoting answer count.}
 
-  \item{position}{of variable name in data.table key,
-  defaults to 3}
+  \item{var_in_key}{of variable name in data.table key,
+  defaults to 4}
 }
 \description{
   This function extracts a zoo time series object from a
   data.table that was created by \code{\link{calc_shares}}
-  and processed by \code{\link{dt2ts_table}}. The resulting
-  zoo object is stored to an environmen
+  and processed by \code{\link{dt_2_ts_table}}. The
+  resulting zoo object is stored to an environment
 }
 \author{
   Matthias Bannert

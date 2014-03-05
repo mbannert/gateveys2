@@ -11,7 +11,7 @@
 #' @author Matthias Bannert
 #' @seealso \code{\link{calc_shares}}
 #' @export
-dt2ts_table <- function(dt,...,
+dt_2_ts_table <- function(dt,...,
                         tindex = "time"
 ){
   

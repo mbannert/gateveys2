@@ -8,7 +8,7 @@
 #' the key that should not be respected. 
 #' @author Matthias Bannert
 #' @export
-dt2grid <- function(dt,exclude=""){
+dt_2_grid <- function(dt,exclude=""){
   # extract key
   k  <- key(dt)
   # remove excluded elements
@@ -16,7 +16,7 @@ dt2grid <- function(dt,exclude=""){
   # select only non-excluded key cols
   # extract unique elements from each col
   # create and return a grid
-  expand.grid(sapply(dt[,k,with=F],unique))
+  expand.grid(lapply(dt[,k,with=F],unique))
 }
 
 

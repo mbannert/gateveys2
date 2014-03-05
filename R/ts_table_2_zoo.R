@@ -2,8 +2,8 @@
 #' 
 #' This function extracts a zoo time series object from a
 #' data.table that was created by \code{\link{calc_shares}}
-#' and processed by \code{\link{dt2ts_table}}. The resulting zoo object
-#' is stored to an environmen
+#' and processed by \code{\link{dt_2_ts_table}}. The resulting zoo object
+#' is stored to an environment
 #' 
 #' @param dtable the data.table object
 #' @param env environment to store the results
@@ -15,7 +15,7 @@
 #' @param item_chunk character chunk denoting items within the time series key. 
 #' defaults to "item:
 #' @param ans_chunk character chunk denoting answer count. 
-#' @param position of variable name in data.table key, defaults to 3
+#' @param var_in_key of variable name in data.table key, defaults to 4
 #' @author Matthias Bannert
 #' @seealso \code{\link{data.table}}
 #' @export
@@ -45,7 +45,7 @@ ts_table_2_zoo <- function(dtable,env,
   
   # CREATE CARTESIAN GRIDS ####
   # grid is created based on key see also ?dt2grid.
-  grd <- dt2grid(dtable,"time")
+  grd <- dt_2_grid(dtable,"time")
   
   # TO DO: look for an apply method that does not coerce and is type safe
   # gotta loop for now, maybe improve this performance wise later on. 
@@ -54,7 +54,7 @@ ts_table_2_zoo <- function(dtable,env,
   res <- list()
   # loop over all rows of the grid
   for (i in 1:nrow(grd)){
-    out <- do.call(dt2ts_table,
+    out <- do.call(dt_2_ts_table,
                    # concatenate list: data.table + the arguments from the grid)
                    c(list(dt=dtable),as.list(grd[i,]))
     )

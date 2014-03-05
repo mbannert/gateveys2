@@ -1,8 +1,8 @@
-\name{dt2ts_table}
-\alias{dt2ts_table}
+\name{dt_2_ts_table}
+\alias{dt_2_ts_table}
 \title{Convert data.table to a time series table}
 \usage{
-  dt2ts_table(dt, ..., tindex = "time")
+  dt_2_ts_table(dt, ..., tindex = "time")
 }
 \arguments{
   \item{dt}{a data.table created by
