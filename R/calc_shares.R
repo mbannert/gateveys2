@@ -13,7 +13,8 @@
 #' @param dt a data.table containing the entire relevant data
 #' @param var a character representation denoting a particular column
 #' of the data.table given in dt. Typically this column represents a 
-#' qualitative question 
+#' qualitative question. The columns of the data.table to which var refers were
+#' tested for factor, integer and character columns.  
 #' @param sizeColumn a character representation of the data.table column
 #' that holds the quantitative weight. If you want to aggregate without 
 #' weighting hand a vector of 1s which is equal to nrow(dt).

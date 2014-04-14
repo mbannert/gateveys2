@@ -10,7 +10,9 @@ calc_shares(dt, var, sizeColumn)
 
   \item{var}{a character representation denoting a
   particular column of the data.table given in dt.
-  Typically this column represents a qualitative question}
+  Typically this column represents a qualitative question.
+  The columns of the data.table to which var refers were
+  tested for factor, integer and character columns.}
 
   \item{sizeColumn}{a character representation of the
   data.table column that holds the quantitative weight. If
