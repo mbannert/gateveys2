@@ -2,9 +2,8 @@
 \alias{ts_table_2_zoo}
 \title{Turn time series data.table into zoo object}
 \usage{
-  ts_table_2_zoo(dtable, env, cname = "ch", pname = "kof",
-    sname = "iq02", freq = 4, item_chunk = "item",
-    ans_chunk = "an", var_in_key = 4)
+ts_table_2_zoo(dtable, env, cname = "ch", pname = "kof", sname = "iq02",
+  freq = 4, item_chunk = "item", ans_chunk = "an", var_in_key = 4)
 }
 \arguments{
   \item{dtable}{the data.table object}
@@ -31,15 +30,15 @@
   defaults to 4}
 }
 \description{
-  This function extracts a zoo time series object from a
-  data.table that was created by \code{\link{calc_shares}}
-  and processed by \code{\link{dt_2_ts_table}}. The
-  resulting zoo object is stored to an environment
+This function extracts a zoo time series object from a
+data.table that was created by \code{\link{calc_shares}}
+and processed by \code{\link{dt_2_ts_table}}. The resulting
+zoo object is stored to an environment
 }
 \author{
-  Matthias Bannert
+Matthias Bannert
 }
 \seealso{
-  \code{\link{data.table}}
+\code{\link{data.table}}
 }
 
