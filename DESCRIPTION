@@ -18,3 +18,17 @@ Depends:
 License: GPL-2
 LazyData: true
 Maintainer: 'Matthias Bannert' <bannert@kof.ethz.ch>
+Collate:
+    'add_up_list_elements.R'
+    'add_up_variables.R'
+    'calc_balance_from_ts_env.R'
+    'calc_shares.R'
+    'cap.R'
+    'dt_2_grid.R'
+    'dt_2_ts_table.R'
+    'fill_up_missing_rows.R'
+    'gateveys2-package.r'
+    'get_by_attributes.R'
+    'mutiply_group.R'
+    'set_attributes_by_extract.R'
+    'ts_table_2_zoo.R'
