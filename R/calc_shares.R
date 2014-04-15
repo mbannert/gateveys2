@@ -62,13 +62,12 @@ calc_shares <- function (dt, var, sizeColumn)
                  # typically 2,3 or 4
                  # list prepares the output
                  # name of the output column = value that is calculated
-                 # TODO : Add more reasonable calumns names and also check ts_table_2_zoo
                  .SD[, list(sumTest = sum(eval(sizeColumn)),
                             # just use n defined above
                             sumTestTotal = n, 
                             # this is a nested subset, we count
                             # the number of answers under the restriction of the GROUP BY answer item
-                            AN = length(eval(sizeColumn)),
+                            AN = length(.SD[, eval(sizeColumn)]),
                             # just use n defined above
                             ANTot = n1, 
                             # simply calculate the share 
@@ -76,7 +75,7 @@ calc_shares <- function (dt, var, sizeColumn)
                             # end list
                  ),
                      # the inner group by statement respecting the answer items of question v
-                     by = eval(var)]
+                     by = eval(as.character(v))]
                  # outer group by statement over all keys of the input dt
                }, by = key(dt)]
   # calc shares got to add a question specific key
