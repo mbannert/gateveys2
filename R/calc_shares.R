@@ -67,7 +67,7 @@ calc_shares <- function (dt, var, sizeColumn)
                             sumTestTotal = n, 
                             # this is a nested subset, we count
                             # the number of answers under the restriction of the GROUP BY answer item
-                            AN = length(.SD[, eval(sizeColumn)]),
+                            AN = length(eval(sizeColumn)),
                             # just use n defined above
                             ANTot = n1, 
                             # simply calculate the share 
