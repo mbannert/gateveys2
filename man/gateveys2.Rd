@@ -4,6 +4,6 @@
 \alias{gateveys2-package}
 \title{gateveys2}
 \description{
-gateveys2
+  gateveys2
 }
 
